@@ -1,0 +1,157 @@
+.movieSelection {
+  background-color: $secondary-color-purple;
+  margin: 2rem;
+  padding: 1rem;
+  height: 625px;
+
+  .name {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .poster {
+    img {
+      width: 70%;
+      box-shadow: 0px 0px 20px rgba(224, 224, 224, 0.6);
+    }
+  }
+
+  .moviedetails {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+
+    .year {
+      padding: 1rem;
+    }
+
+    .revenue {
+      padding: 1rem;
+    }
+
+    .calcRev {
+      padding: 1rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .movieSelection {
+    .name {
+    }
+
+    .poster {
+      img {
+        width: 50%;
+        box-shadow: 0px 0px 20px rgba(224, 224, 224, 0.6);
+      }
+    }
+
+    .moviedetails {
+      margin-top: 2rem;
+      font-size: 1.75rem;
+
+      .year {
+        padding: 1rem;
+      }
+
+      .revenue {
+        padding: 1rem;
+      }
+
+      .calcRev {
+        padding: 1rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .movieSelection {
+    background-color: $secondary-color-purple;
+    margin: 1rem;
+    padding: 1rem;
+    height: 300px;
+
+    .name {
+      width: 100%;
+      background-color: $primary-color-purple;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .poster {
+      float: left;
+      width: 30%;
+
+      img {
+        // float: left;
+        box-shadow: 0px 0px 20px rgba(224, 224, 224, 0.6);
+      }
+    }
+
+    .moviedetails {
+      // border: 1px solid blue;
+      margin-top: 2rem;
+      font-size: 1.75rem;
+
+      .year {
+        padding: 1.5rem;
+      }
+
+      .revenue {
+        padding: 1.5rem;
+      }
+
+      .calcRev {
+        padding: 1.5rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .movieSelection {
+    background-color: $secondary-color-purple;
+    margin: 1rem;
+    padding: 1rem;
+    height: 300px;
+
+    .name {
+      width: 100%;
+      background-color: $primary-color-purple;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .poster {
+      display: inline-block;
+      height: 80%;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+
+    .moviedetails {
+      // border: 1px solid blue;
+      margin-top: 2rem;
+      font-size: 1.75rem;
+
+      .year {
+        padding: 1.5rem;
+      }
+
+      .revenue {
+        padding: 1.5rem;
+      }
+
+      .calcRev {
+        padding: 1.5rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}

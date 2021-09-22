@@ -1,0 +1,137 @@
+.choicearea {
+  display: flex;
+  flex-direction: column;
+  color: $primary-color-light;
+  font-family: 'Raleway', san-serif;
+  margin: 5rem;
+
+  // border: 5px solid red;
+  text-align: center;
+
+  .desc {
+    font-size: 2rem;
+    padding: 0 2rem;
+    line-height: 4.5rem;
+  }
+
+  .title {
+    font-size: 5rem;
+    padding: 5rem 0 7rem;
+  }
+
+  .movie {
+    background-color: $primary-color-purple;
+    width: 35%;
+
+    input {
+      font-size: 2rem;
+      font-family: Raleway, sans-serif;
+      padding: 0.5rem;
+      margin: 1.5rem 0 0 0;
+    }
+  }
+
+  .moviebout {
+    margin: 0 auto;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .winner {
+    margin-top: 2rem;
+    width: 100vw;
+    padding: 5rem;
+    background-color: $primary-color-red;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .choicearea {
+    .desc {
+      line-height: 3.5rem;
+    }
+
+    .title {
+      padding: 5rem 0 7rem;
+    }
+
+    .movie {
+      background-color: $primary-color-purple;
+      width: 45%;
+
+      input {
+      }
+    }
+
+    .moviebout {
+      width: 85%;
+    }
+
+    .winner {
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .choicearea {
+    .desc {
+      padding: 0 5rem;
+      line-height: 3rem;
+    }
+
+    .title {
+      padding: 5rem 0 7rem;
+    }
+
+    .movie {
+      background-color: $primary-color-purple;
+      width: 90%;
+      margin: 1rem;
+
+      input {
+      }
+    }
+
+    .moviebout {
+      width: 85%;
+      flex-direction: column;
+    }
+
+    .winner {
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .choicearea {
+    .desc {
+      font-size: 1.75rem;
+      padding: 0 5rem;
+      line-height: 3rem;
+    }
+
+    .title {
+      font-size: 3rem;
+      padding: 5rem 0 5rem;
+    }
+
+    .movie {
+      background-color: $primary-color-purple;
+      width: 90%;
+      margin: 1rem;
+
+      input {
+      }
+    }
+
+    .moviebout {
+      width: 85%;
+      flex-direction: column;
+    }
+
+    .winner {
+    }
+  }
+}
