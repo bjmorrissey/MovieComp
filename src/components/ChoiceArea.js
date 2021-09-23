@@ -83,7 +83,7 @@ const ChoiceArea = () => {
     }
       
       let startingYear = Number(movie.year);
-      let url= `https://inflation-api.herokuapp.com/api/?value=${startingAmount}&year=${startingYear}`
+      let url= `https://cors-anywhere.herokuapp.com/https://inflation-api.herokuapp.com/api/?value=${startingAmount}&year=${startingYear}`
       
       // console.log(url)
       let response  = await fetch(url);
@@ -119,7 +119,7 @@ const ChoiceArea = () => {
     }
       
       let startingYear = Number(movie.year);
-      let url= `https://inflation-api.herokuapp.com/api/?value=${startingAmount}&year=${startingYear}`
+      let url= `https://cors-anywhere.herokuapp.com/https://inflation-api.herokuapp.com/api/?value=${startingAmount}&year=${startingYear}`
       
       // console.log(url)
       let response  = await fetch(url);
