@@ -137,12 +137,20 @@ const ChoiceArea = () => {
   }
  
   const winner = (one, two) => {
+    
     let oneInt = Number(Math.floor(one.replace("$", "").replaceAll(",", "")))
     let twoInt = Number(Math.floor(two.replace("$", "").replaceAll(",", "")))
     let suff = ''
     let short = ''
 
-    if (oneInt > twoInt) {
+    if (!oneInt || !twoInt)  {
+      if (movieOneInfo.earnings === undefined || movieTwoInfo.earnings === undefined){
+
+        return `There's an issue with an amount not being reported. Try another movie!`;
+      }
+    } else {
+
+     if (oneInt > twoInt) {
       let diff = oneInt - twoInt;
       
       if (diff.toString().length > 6) {
@@ -167,7 +175,7 @@ const ChoiceArea = () => {
         return <div style={bold}>{movieOneInfo.title}</div>
       }
       
-      
+     
       
       return `After inflation, ${movieOneInfo.title} brought in $${short}${suff} more income. `
 
@@ -188,11 +196,11 @@ const ChoiceArea = () => {
       }
       return `After inflation, ${movieTwoInfo.title} brought in $${short}${suff} more income. `
     }
-
+  
   }
- 
+}
 
- 
+console.log(movieOneInfo.earnings, movieTwoInfo.earnings)
 
   return (
   <div className="choicearea">
@@ -221,6 +229,7 @@ const ChoiceArea = () => {
 
     </div>
     <div className="winner">
+    
       {winner(movieOneAdjEarnings, movieTwoAdjEarnings)}
     </div>
   </div>
